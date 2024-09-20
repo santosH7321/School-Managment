@@ -1,4 +1,5 @@
-import { NextFunction, Request } from "express";
+import { NextFunction, Request, Response } from "express";
+
 import ErrorHandler from "../utils/ErrorHandler";
 
 export const ErrorMiddleware = (
@@ -38,4 +39,6 @@ export const ErrorMiddleware = (
     success: false,
     message: err.message,
   });
+ 
 };
+
